@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091AF011256AB7E20035D3DA /* StockDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091AF010256AB7E20035D3DA /* StockDTO.swift */; };
+		091AF017256AB8360035D3DA /* FavoriteListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091AF016256AB8360035D3DA /* FavoriteListDTO.swift */; };
+		091AF020256AB8930035D3DA /* StockDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091AF01F256AB8930035D3DA /* StockDTOTests.swift */; };
+		091AF029256AB8D40035D3DA /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091AF028256AB8D40035D3DA /* ResourceLoader.swift */; };
+		091AF02F256AB93E0035D3DA /* FavoriteListDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091AF02E256AB93E0035D3DA /* FavoriteListDTOTests.swift */; };
+		091AF035256AB9830035D3DA /* stock_dto.json in Resources */ = {isa = PBXBuildFile; fileRef = 091AF034256AB9830035D3DA /* stock_dto.json */; };
+		091AF03B256AB9A10035D3DA /* favorite_list_dto.json in Resources */ = {isa = PBXBuildFile; fileRef = 091AF03A256AB9A10035D3DA /* favorite_list_dto.json */; };
 		099611E9256AA0B800BF3A2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099611E8256AA0B800BF3A2D /* AppDelegate.swift */; };
 		099611EB256AA0B800BF3A2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099611EA256AA0B800BF3A2D /* SceneDelegate.swift */; };
 		099611ED256AA0B800BF3A2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099611EC256AA0B800BF3A2D /* ViewController.swift */; };
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		091AF010256AB7E20035D3DA /* StockDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDTO.swift; sourceTree = "<group>"; };
+		091AF016256AB8360035D3DA /* FavoriteListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListDTO.swift; sourceTree = "<group>"; };
+		091AF01F256AB8930035D3DA /* StockDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDTOTests.swift; sourceTree = "<group>"; };
+		091AF028256AB8D40035D3DA /* ResourceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
+		091AF02E256AB93E0035D3DA /* FavoriteListDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListDTOTests.swift; sourceTree = "<group>"; };
+		091AF034256AB9830035D3DA /* stock_dto.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stock_dto.json; sourceTree = "<group>"; };
+		091AF03A256AB9A10035D3DA /* favorite_list_dto.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = favorite_list_dto.json; sourceTree = "<group>"; };
 		099611E5256AA0B800BF3A2D /* NinetyNineChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinetyNineChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		099611E8256AA0B800BF3A2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		099611EA256AA0B800BF3A2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +86,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091AF00B256AB7A60035D3DA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				091AF00C256AB7AA0035D3DA /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		091AF00C256AB7AA0035D3DA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				091AF00D256AB7AE0035D3DA /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		091AF00D256AB7AE0035D3DA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				091AF00E256AB7B50035D3DA /* ChallengeAPI */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		091AF00E256AB7B50035D3DA /* ChallengeAPI */ = {
+			isa = PBXGroup;
+			children = (
+				091AF00F256AB7D30035D3DA /* DataModels */,
+			);
+			path = ChallengeAPI;
+			sourceTree = "<group>";
+		};
+		091AF00F256AB7D30035D3DA /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				091AF010256AB7E20035D3DA /* StockDTO.swift */,
+				091AF016256AB8360035D3DA /* FavoriteListDTO.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		091AF01A256AB8630035D3DA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				091AF01B256AB8680035D3DA /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		091AF01B256AB8680035D3DA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				091AF01C256AB8710035D3DA /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		091AF01C256AB8710035D3DA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				091AF01D256AB8770035D3DA /* ChallengeAPI */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		091AF01D256AB8770035D3DA /* ChallengeAPI */ = {
+			isa = PBXGroup;
+			children = (
+				091AF032256AB9620035D3DA /* Resources */,
+				091AF01E256AB8850035D3DA /* DataModels */,
+			);
+			path = ChallengeAPI;
+			sourceTree = "<group>";
+		};
+		091AF01E256AB8850035D3DA /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				091AF01F256AB8930035D3DA /* StockDTOTests.swift */,
+				091AF02E256AB93E0035D3DA /* FavoriteListDTOTests.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		091AF027256AB8C90035D3DA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				091AF028256AB8D40035D3DA /* ResourceLoader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		091AF032256AB9620035D3DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				091AF034256AB9830035D3DA /* stock_dto.json */,
+				091AF03A256AB9A10035D3DA /* favorite_list_dto.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		099611DC256AA0B800BF3A2D = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +207,7 @@
 		099611E7256AA0B800BF3A2D /* NinetyNineChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				091AF00B256AB7A60035D3DA /* Data */,
 				09961226256AA5B700BF3A2D /* Domain */,
 				099611E8256AA0B800BF3A2D /* AppDelegate.swift */,
 				099611EA256AA0B800BF3A2D /* SceneDelegate.swift */,
@@ -108,6 +223,8 @@
 		099611FE256AA0B900BF3A2D /* NinetyNineChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				091AF027256AB8C90035D3DA /* Helpers */,
+				091AF01A256AB8630035D3DA /* Data */,
 				099611FF256AA0B900BF3A2D /* NinetyNineChallengeTests.swift */,
 				09961201256AA0B900BF3A2D /* Info.plist */,
 			);
@@ -258,6 +375,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091AF035256AB9830035D3DA /* stock_dto.json in Resources */,
+				091AF03B256AB9A10035D3DA /* favorite_list_dto.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +390,9 @@
 				09961262256AACDA00BF3A2D /* NNError.swift in Sources */,
 				0996126C256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift in Sources */,
 				09961267256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift in Sources */,
+				091AF017256AB8360035D3DA /* FavoriteListDTO.swift in Sources */,
 				099611ED256AA0B800BF3A2D /* ViewController.swift in Sources */,
+				091AF011256AB7E20035D3DA /* StockDTO.swift in Sources */,
 				0996128F256AB5EF00BF3A2D /* FavoriteStocksListUseCaseImpl.swift in Sources */,
 				099611E9256AA0B800BF3A2D /* AppDelegate.swift in Sources */,
 				09961229256AA5F500BF3A2D /* Stock.swift in Sources */,
@@ -285,7 +406,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091AF020256AB8930035D3DA /* StockDTOTests.swift in Sources */,
 				09961200256AA0B900BF3A2D /* NinetyNineChallengeTests.swift in Sources */,
+				091AF029256AB8D40035D3DA /* ResourceLoader.swift in Sources */,
+				091AF02F256AB93E0035D3DA /* FavoriteListDTOTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
