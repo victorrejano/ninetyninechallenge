@@ -118,7 +118,7 @@ private extension ChallengeAPIServiceTests {
         
         let favoriteStockDetailURL = try!
             requestBuilder
-            .setEndpoint(ChallengeAPIEndpoint.favoriteStockDetail(identifier: ""))
+            .setEndpoint(ChallengeAPIEndpoint.favoriteStockDetail(identifier: "123"))
             .build()
             .url!
         let favoriteStockDetailResponseData = ResourceLoader.loadData(name: "favorite_stock_detail_invalid")!
