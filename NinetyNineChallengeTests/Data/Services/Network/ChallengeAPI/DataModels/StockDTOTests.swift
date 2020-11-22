@@ -13,4 +13,15 @@ final class StockDTOTests: XCTestCase {
         let sut = ResourceLoader.load(type: StockDTO.self, name: "stock_dto")
         XCTAssertNotNil(sut)
     }
+    
+    func test_mappingStockDTO_toStock_isCorrect() {
+        let sut = ResourceLoader.load(type: StockDTO.self, name: "stock_dto")
+        XCTAssertNotNil(sut)
+        
+        let domainEntity = sut?.toDomain()
+        XCTAssertEqual(sut?.category, domainEntity?.category)
+        XCTAssertEqual(sut?.hot, domainEntity?.hot)
+        XCTAssertEqual(sut?.name, domainEntity?.name)
+        XCTAssertEqual(sut?.ricCode, domainEntity?.reutersInstrumentCode)
+    }
 }
