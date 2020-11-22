@@ -13,3 +13,5 @@ struct Stock {
     let reutersInstrumentCode: String
     let category: String
 }
+
+typealias FavoriteStocks = [String]

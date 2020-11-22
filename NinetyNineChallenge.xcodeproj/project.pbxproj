@@ -19,6 +19,8 @@
 		09961262256AACDA00BF3A2D /* NNError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09961261256AACDA00BF3A2D /* NNError.swift */; };
 		09961267256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09961266256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift */; };
 		0996126C256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996126B256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift */; };
+		09961289256AB58200BF3A2D /* FavoriteStocksListUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09961288256AB58200BF3A2D /* FavoriteStocksListUseCaseProtocol.swift */; };
+		0996128F256AB5EF00BF3A2D /* FavoriteStocksListUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996128E256AB5EF00BF3A2D /* FavoriteStocksListUseCaseImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		09961261256AACDA00BF3A2D /* NNError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNError.swift; sourceTree = "<group>"; };
 		09961266256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRepositoryProtocol.swift; sourceTree = "<group>"; };
 		0996126B256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStockDetailUseCaseImpl.swift; sourceTree = "<group>"; };
+		09961288256AB58200BF3A2D /* FavoriteStocksListUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStocksListUseCaseProtocol.swift; sourceTree = "<group>"; };
+		0996128E256AB5EF00BF3A2D /* FavoriteStocksListUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStocksListUseCaseImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		09961257256AAC3F00BF3A2D /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				09961287256AB56500BF3A2D /* FavoriteStocksListUseCase */,
 				09961258256AAC4600BF3A2D /* FavoriteStockDetailUseCase */,
 			);
 			path = UseCases;
@@ -152,6 +157,15 @@
 				09961266256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		09961287256AB56500BF3A2D /* FavoriteStocksListUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				09961288256AB58200BF3A2D /* FavoriteStocksListUseCaseProtocol.swift */,
+				0996128E256AB5EF00BF3A2D /* FavoriteStocksListUseCaseImpl.swift */,
+			);
+			path = FavoriteStocksListUseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +272,10 @@
 				0996126C256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift in Sources */,
 				09961267256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift in Sources */,
 				099611ED256AA0B800BF3A2D /* ViewController.swift in Sources */,
+				0996128F256AB5EF00BF3A2D /* FavoriteStocksListUseCaseImpl.swift in Sources */,
 				099611E9256AA0B800BF3A2D /* AppDelegate.swift in Sources */,
 				09961229256AA5F500BF3A2D /* Stock.swift in Sources */,
+				09961289256AB58200BF3A2D /* FavoriteStocksListUseCaseProtocol.swift in Sources */,
 				099611EB256AA0B800BF3A2D /* SceneDelegate.swift in Sources */,
 				0996125A256AAC6500BF3A2D /* FavoriteStockDetailUseCaseProtocol.swift in Sources */,
 			);

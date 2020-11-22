@@ -16,7 +16,7 @@ final class FavoriteStockDetailUseCaseImpl: FavoriteStockDetailUseCaseProtocol {
     
     func fetch(withIdentifier identifier: String,
                _ completion: @escaping (Result<Stock, NNError>) -> Void) {
-        self.repository.fetchFavoriteStock(withIdentifier: identifier,
-                                           completion)
+        repository.fetchFavoriteStock(withIdentifier: identifier,
+                                      completion)
     }
 }
