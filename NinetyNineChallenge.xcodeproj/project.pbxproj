@@ -15,6 +15,10 @@
 		099611F5256AA0B900BF3A2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099611F3256AA0B900BF3A2D /* LaunchScreen.storyboard */; };
 		09961200256AA0B900BF3A2D /* NinetyNineChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099611FF256AA0B900BF3A2D /* NinetyNineChallengeTests.swift */; };
 		09961229256AA5F500BF3A2D /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09961228256AA5F500BF3A2D /* Stock.swift */; };
+		0996125A256AAC6500BF3A2D /* FavoriteStockDetailUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09961259256AAC6500BF3A2D /* FavoriteStockDetailUseCaseProtocol.swift */; };
+		09961262256AACDA00BF3A2D /* NNError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09961261256AACDA00BF3A2D /* NNError.swift */; };
+		09961267256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09961266256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift */; };
+		0996126C256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996126B256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		099611FF256AA0B900BF3A2D /* NinetyNineChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinetyNineChallengeTests.swift; sourceTree = "<group>"; };
 		09961201256AA0B900BF3A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09961228256AA5F500BF3A2D /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		09961259256AAC6500BF3A2D /* FavoriteStockDetailUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavoriteStockDetailUseCaseProtocol.swift; path = NinetyNineChallenge/Domain/FavoriteStockDetailUseCaseProtocol.swift; sourceTree = SOURCE_ROOT; };
+		09961261256AACDA00BF3A2D /* NNError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNError.swift; sourceTree = "<group>"; };
+		09961266256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRepositoryProtocol.swift; sourceTree = "<group>"; };
+		0996126B256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStockDetailUseCaseImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +113,10 @@
 		09961226256AA5B700BF3A2D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				09961265256AAD4900BF3A2D /* Repositories */,
+				09961257256AAC3F00BF3A2D /* UseCases */,
 				09961227256AA5D300BF3A2D /* Entities */,
+				09961261256AACDA00BF3A2D /* NNError.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -116,6 +127,31 @@
 				09961228256AA5F500BF3A2D /* Stock.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		09961257256AAC3F00BF3A2D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				09961258256AAC4600BF3A2D /* FavoriteStockDetailUseCase */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		09961258256AAC4600BF3A2D /* FavoriteStockDetailUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				09961259256AAC6500BF3A2D /* FavoriteStockDetailUseCaseProtocol.swift */,
+				0996126B256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift */,
+			);
+			path = FavoriteStockDetailUseCase;
+			sourceTree = "<group>";
+		};
+		09961265256AAD4900BF3A2D /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				09961266256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,10 +254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09961262256AACDA00BF3A2D /* NNError.swift in Sources */,
+				0996126C256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift in Sources */,
+				09961267256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift in Sources */,
 				099611ED256AA0B800BF3A2D /* ViewController.swift in Sources */,
 				099611E9256AA0B800BF3A2D /* AppDelegate.swift in Sources */,
 				09961229256AA5F500BF3A2D /* Stock.swift in Sources */,
 				099611EB256AA0B800BF3A2D /* SceneDelegate.swift in Sources */,
+				0996125A256AAC6500BF3A2D /* FavoriteStockDetailUseCaseProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
