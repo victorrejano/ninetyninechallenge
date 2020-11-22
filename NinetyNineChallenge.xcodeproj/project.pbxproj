@@ -14,6 +14,7 @@
 		099611F2256AA0B900BF3A2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099611F1256AA0B900BF3A2D /* Assets.xcassets */; };
 		099611F5256AA0B900BF3A2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099611F3256AA0B900BF3A2D /* LaunchScreen.storyboard */; };
 		09961200256AA0B900BF3A2D /* NinetyNineChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099611FF256AA0B900BF3A2D /* NinetyNineChallengeTests.swift */; };
+		09961229256AA5F500BF3A2D /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09961228256AA5F500BF3A2D /* Stock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		099611FB256AA0B900BF3A2D /* NinetyNineChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NinetyNineChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		099611FF256AA0B900BF3A2D /* NinetyNineChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinetyNineChallengeTests.swift; sourceTree = "<group>"; };
 		09961201256AA0B900BF3A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09961228256AA5F500BF3A2D /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		099611E7256AA0B800BF3A2D /* NinetyNineChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				09961226256AA5B700BF3A2D /* Domain */,
 				099611E8256AA0B800BF3A2D /* AppDelegate.swift */,
 				099611EA256AA0B800BF3A2D /* SceneDelegate.swift */,
 				099611EC256AA0B800BF3A2D /* ViewController.swift */,
@@ -97,6 +100,22 @@
 				09961201256AA0B900BF3A2D /* Info.plist */,
 			);
 			path = NinetyNineChallengeTests;
+			sourceTree = "<group>";
+		};
+		09961226256AA5B700BF3A2D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				09961227256AA5D300BF3A2D /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		09961227256AA5D300BF3A2D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				09961228256AA5F500BF3A2D /* Stock.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +220,7 @@
 			files = (
 				099611ED256AA0B800BF3A2D /* ViewController.swift in Sources */,
 				099611E9256AA0B800BF3A2D /* AppDelegate.swift in Sources */,
+				09961229256AA5F500BF3A2D /* Stock.swift in Sources */,
 				099611EB256AA0B800BF3A2D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
