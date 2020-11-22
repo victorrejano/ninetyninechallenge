@@ -12,7 +12,7 @@ final class ChallengeAPIServiceTests: XCTestCase {
     func test_retrieveFavoriteStocksList_correctResult() {
         let expectation = XCTestExpectation(description: "Data downloaded successfully")
         let sut = makeSUT()
-        sut.fetchFavoriteStocksList { result in
+        sut.fetchFavoriteStocks { result in
             switch result {
             case .success(let list) where !list.result.isEmpty:
                 expectation.fulfill()
@@ -27,7 +27,7 @@ final class ChallengeAPIServiceTests: XCTestCase {
     func test_retrieveFavoriteStocksList_wrongResult() {
         let expectation = XCTestExpectation(description: "API error handled successfully")
         let sut = makeSUT(withTestURLs: Self.provideWrongURLs())
-        sut.fetchFavoriteStocksList { result in
+        sut.fetchFavoriteStocks { result in
             switch result {
             case .failure(_):
                 expectation.fulfill()
@@ -42,7 +42,7 @@ final class ChallengeAPIServiceTests: XCTestCase {
     func test_retrieveStockDetail_correctResult() {
         let expectation = XCTestExpectation(description: "Data downloaded successfully")
         let sut = makeSUT()
-        sut.fetchfavoriteStockDetail(withIdentifier: "123") { result in
+        sut.fetchFavoriteStock(withIdentifier: "123") { result in
             switch result {
             case .success(_):
                 expectation.fulfill()
@@ -57,7 +57,7 @@ final class ChallengeAPIServiceTests: XCTestCase {
     func test_retrieveStockDetail_wrongResult() {
         let expectation = XCTestExpectation(description: "API error handled successfully")
         let sut = makeSUT(withTestURLs: Self.provideWrongURLs())
-        sut.fetchfavoriteStockDetail(withIdentifier: "456") { result in
+        sut.fetchFavoriteStock(withIdentifier: "456") { result in
             switch result {
             case .failure(_):
                 expectation.fulfill()

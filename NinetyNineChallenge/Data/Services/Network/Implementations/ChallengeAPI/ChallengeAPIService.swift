@@ -17,7 +17,7 @@ final class ChallengeAPIService {
         self.requestBuilder = requestBuilder
     }
     
-    func fetchFavoriteStocksList(_ completion: @escaping (Result<FavoriteListDTO, NNError>) -> Void) {
+    func fetchFavoriteStocks(_ completion: @escaping (Result<FavoriteListDTO, NNError>) -> Void) {
         do {
             let request = try requestBuilder
                 .setEndpoint(ChallengeAPIEndpoint.favoriteStocksList)
@@ -32,8 +32,8 @@ final class ChallengeAPIService {
         }
     }
     
-    func fetchfavoriteStockDetail(withIdentifier identifier: String,
-                                  _ completion: @escaping (Result<StockDTO, NNError>) -> Void) {
+    func fetchFavoriteStock(withIdentifier identifier: String,
+                            _ completion: @escaping (Result<StockDTO, NNError>) -> Void) {
         do {
             let request = try requestBuilder
                 .setEndpoint(ChallengeAPIEndpoint.favoriteStockDetail(identifier: identifier))

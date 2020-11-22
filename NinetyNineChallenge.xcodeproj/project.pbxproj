@@ -30,6 +30,7 @@
 		09534067256AD8C900EBBB03 /* favorite_stock_detail_valid.json in Resources */ = {isa = PBXBuildFile; fileRef = 09534066256AD8C900EBBB03 /* favorite_stock_detail_valid.json */; };
 		0953406B256AD8DB00EBBB03 /* favorite_stock_list_request_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 0953406A256AD8DB00EBBB03 /* favorite_stock_list_request_invalid.json */; };
 		0953406F256AD8EC00EBBB03 /* favorite_stock_detail_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 0953406E256AD8EC00EBBB03 /* favorite_stock_detail_invalid.json */; };
+		09534074256ADD2400EBBB03 /* FavoritesRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09534073256ADD2400EBBB03 /* FavoritesRepositoryImpl.swift */; };
 		099611E9256AA0B800BF3A2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099611E8256AA0B800BF3A2D /* AppDelegate.swift */; };
 		099611EB256AA0B800BF3A2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099611EA256AA0B800BF3A2D /* SceneDelegate.swift */; };
 		099611ED256AA0B800BF3A2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099611EC256AA0B800BF3A2D /* ViewController.swift */; };
@@ -79,6 +80,7 @@
 		09534066256AD8C900EBBB03 /* favorite_stock_detail_valid.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = favorite_stock_detail_valid.json; sourceTree = "<group>"; };
 		0953406A256AD8DB00EBBB03 /* favorite_stock_list_request_invalid.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = favorite_stock_list_request_invalid.json; sourceTree = "<group>"; };
 		0953406E256AD8EC00EBBB03 /* favorite_stock_detail_invalid.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = favorite_stock_detail_invalid.json; sourceTree = "<group>"; };
+		09534073256ADD2400EBBB03 /* FavoritesRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRepositoryImpl.swift; sourceTree = "<group>"; };
 		099611E5256AA0B800BF3A2D /* NinetyNineChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinetyNineChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		099611E8256AA0B800BF3A2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		099611EA256AA0B800BF3A2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		091AF00B256AB7A60035D3DA /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				09534072256ADD0D00EBBB03 /* Repositories */,
 				091AF00C256AB7AA0035D3DA /* Services */,
 			);
 			path = Data;
@@ -278,6 +281,14 @@
 				0953406E256AD8EC00EBBB03 /* favorite_stock_detail_invalid.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		09534072256ADD0D00EBBB03 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				09534073256ADD2400EBBB03 /* FavoritesRepositoryImpl.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		099611DC256AA0B800BF3A2D = {
@@ -504,6 +515,7 @@
 				091AF078256AC8760035D3DA /* ChallengeAPICredentials.swift in Sources */,
 				09961289256AB58200BF3A2D /* FavoriteStocksListUseCaseProtocol.swift in Sources */,
 				091AF055256ABDF20035D3DA /* RequestEndpointProtocol.swift in Sources */,
+				09534074256ADD2400EBBB03 /* FavoritesRepositoryImpl.swift in Sources */,
 				099611EB256AA0B800BF3A2D /* SceneDelegate.swift in Sources */,
 				0996125A256AAC6500BF3A2D /* FavoriteStockDetailUseCaseProtocol.swift in Sources */,
 			);
