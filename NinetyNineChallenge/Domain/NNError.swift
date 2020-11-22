@@ -8,5 +8,13 @@
 import Foundation
 
 enum NNError: Error {
-    case custom(Error)
+    case data(Data)
+    case network(Error)
+    case custom(String)
+    case unknown(Error)
+    
+    enum Data {
+        case unableToObtain
+        case invalid
+    }
 }
