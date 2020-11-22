@@ -14,18 +14,10 @@
 		099611F2256AA0B900BF3A2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099611F1256AA0B900BF3A2D /* Assets.xcassets */; };
 		099611F5256AA0B900BF3A2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099611F3256AA0B900BF3A2D /* LaunchScreen.storyboard */; };
 		09961200256AA0B900BF3A2D /* NinetyNineChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099611FF256AA0B900BF3A2D /* NinetyNineChallengeTests.swift */; };
-		0996120B256AA0B900BF3A2D /* NinetyNineChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996120A256AA0B900BF3A2D /* NinetyNineChallengeUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		099611FC256AA0B900BF3A2D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 099611DD256AA0B800BF3A2D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 099611E4256AA0B800BF3A2D;
-			remoteInfo = NinetyNineChallenge;
-		};
-		09961207256AA0B900BF3A2D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 099611DD256AA0B800BF3A2D /* Project object */;
 			proxyType = 1;
@@ -46,9 +38,6 @@
 		099611FB256AA0B900BF3A2D /* NinetyNineChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NinetyNineChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		099611FF256AA0B900BF3A2D /* NinetyNineChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinetyNineChallengeTests.swift; sourceTree = "<group>"; };
 		09961201256AA0B900BF3A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09961206256AA0B900BF3A2D /* NinetyNineChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NinetyNineChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0996120A256AA0B900BF3A2D /* NinetyNineChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinetyNineChallengeUITests.swift; sourceTree = "<group>"; };
-		0996120C256AA0B900BF3A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +55,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09961203256AA0B900BF3A2D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +63,6 @@
 			children = (
 				099611E7256AA0B800BF3A2D /* NinetyNineChallenge */,
 				099611FE256AA0B900BF3A2D /* NinetyNineChallengeTests */,
-				09961209256AA0B900BF3A2D /* NinetyNineChallengeUITests */,
 				099611E6256AA0B800BF3A2D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +72,6 @@
 			children = (
 				099611E5256AA0B800BF3A2D /* NinetyNineChallenge.app */,
 				099611FB256AA0B900BF3A2D /* NinetyNineChallengeTests.xctest */,
-				09961206256AA0B900BF3A2D /* NinetyNineChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,15 +97,6 @@
 				09961201256AA0B900BF3A2D /* Info.plist */,
 			);
 			path = NinetyNineChallengeTests;
-			sourceTree = "<group>";
-		};
-		09961209256AA0B900BF3A2D /* NinetyNineChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0996120A256AA0B900BF3A2D /* NinetyNineChallengeUITests.swift */,
-				0996120C256AA0B900BF3A2D /* Info.plist */,
-			);
-			path = NinetyNineChallengeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +137,6 @@
 			productReference = 099611FB256AA0B900BF3A2D /* NinetyNineChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		09961205256AA0B900BF3A2D /* NinetyNineChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09961215256AA0B900BF3A2D /* Build configuration list for PBXNativeTarget "NinetyNineChallengeUITests" */;
-			buildPhases = (
-				09961202256AA0B900BF3A2D /* Sources */,
-				09961203256AA0B900BF3A2D /* Frameworks */,
-				09961204256AA0B900BF3A2D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				09961208256AA0B900BF3A2D /* PBXTargetDependency */,
-			);
-			name = NinetyNineChallengeUITests;
-			productName = NinetyNineChallengeUITests;
-			productReference = 09961206256AA0B900BF3A2D /* NinetyNineChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +150,6 @@
 						CreatedOnToolsVersion = 12.2;
 					};
 					099611FA256AA0B900BF3A2D = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 099611E4256AA0B800BF3A2D;
-					};
-					09961205256AA0B900BF3A2D = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 099611E4256AA0B800BF3A2D;
 					};
@@ -221,7 +170,6 @@
 			targets = (
 				099611E4256AA0B800BF3A2D /* NinetyNineChallenge */,
 				099611FA256AA0B900BF3A2D /* NinetyNineChallengeTests */,
-				09961205256AA0B900BF3A2D /* NinetyNineChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +186,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		099611F9256AA0B900BF3A2D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09961204256AA0B900BF3A2D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,14 +213,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09961202256AA0B900BF3A2D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0996120B256AA0B900BF3A2D /* NinetyNineChallengeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -287,11 +220,6 @@
 			isa = PBXTargetDependency;
 			target = 099611E4256AA0B800BF3A2D /* NinetyNineChallenge */;
 			targetProxy = 099611FC256AA0B900BF3A2D /* PBXContainerItemProxy */;
-		};
-		09961208256AA0B900BF3A2D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 099611E4256AA0B800BF3A2D /* NinetyNineChallenge */;
-			targetProxy = 09961207256AA0B900BF3A2D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -366,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -446,7 +374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = victorrejanoapps.NinetyNineChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = victorrejanoapps.NinetyNineChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -477,7 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 492CW4KB35;
 				INFOPLIST_FILE = NinetyNineChallengeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,7 +427,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 492CW4KB35;
 				INFOPLIST_FILE = NinetyNineChallengeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,46 +438,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NinetyNineChallenge.app/NinetyNineChallenge";
-			};
-			name = Release;
-		};
-		09961216256AA0B900BF3A2D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 492CW4KB35;
-				INFOPLIST_FILE = NinetyNineChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = victorrejanoapps.NinetyNineChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NinetyNineChallenge;
-			};
-			name = Debug;
-		};
-		09961217256AA0B900BF3A2D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 492CW4KB35;
-				INFOPLIST_FILE = NinetyNineChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = victorrejanoapps.NinetyNineChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NinetyNineChallenge;
 			};
 			name = Release;
 		};
@@ -579,15 +467,6 @@
 			buildConfigurations = (
 				09961213256AA0B900BF3A2D /* Debug */,
 				09961214256AA0B900BF3A2D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		09961215256AA0B900BF3A2D /* Build configuration list for PBXNativeTarget "NinetyNineChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09961216256AA0B900BF3A2D /* Debug */,
-				09961217256AA0B900BF3A2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
