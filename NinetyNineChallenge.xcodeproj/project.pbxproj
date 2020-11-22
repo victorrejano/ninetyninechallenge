@@ -14,6 +14,8 @@
 		091AF02F256AB93E0035D3DA /* FavoriteListDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091AF02E256AB93E0035D3DA /* FavoriteListDTOTests.swift */; };
 		091AF035256AB9830035D3DA /* stock_dto.json in Resources */ = {isa = PBXBuildFile; fileRef = 091AF034256AB9830035D3DA /* stock_dto.json */; };
 		091AF03B256AB9A10035D3DA /* favorite_list_dto.json in Resources */ = {isa = PBXBuildFile; fileRef = 091AF03A256AB9A10035D3DA /* favorite_list_dto.json */; };
+		091AF04A256ABA810035D3DA /* StockDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091AF049256ABA810035D3DA /* StockDTO+Mapping.swift */; };
+		091AF04E256ABAC80035D3DA /* FavoriteListDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091AF04D256ABAC80035D3DA /* FavoriteListDTO+Mapping.swift */; };
 		099611E9256AA0B800BF3A2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099611E8256AA0B800BF3A2D /* AppDelegate.swift */; };
 		099611EB256AA0B800BF3A2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099611EA256AA0B800BF3A2D /* SceneDelegate.swift */; };
 		099611ED256AA0B800BF3A2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099611EC256AA0B800BF3A2D /* ViewController.swift */; };
@@ -48,6 +50,8 @@
 		091AF02E256AB93E0035D3DA /* FavoriteListDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListDTOTests.swift; sourceTree = "<group>"; };
 		091AF034256AB9830035D3DA /* stock_dto.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stock_dto.json; sourceTree = "<group>"; };
 		091AF03A256AB9A10035D3DA /* favorite_list_dto.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = favorite_list_dto.json; sourceTree = "<group>"; };
+		091AF049256ABA810035D3DA /* StockDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockDTO+Mapping.swift"; sourceTree = "<group>"; };
+		091AF04D256ABAC80035D3DA /* FavoriteListDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteListDTO+Mapping.swift"; sourceTree = "<group>"; };
 		099611E5256AA0B800BF3A2D /* NinetyNineChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinetyNineChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		099611E8256AA0B800BF3A2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		099611EA256AA0B800BF3A2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 		091AF00F256AB7D30035D3DA /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
+				091AF040256ABA190035D3DA /* Mappers */,
 				091AF010256AB7E20035D3DA /* StockDTO.swift */,
 				091AF016256AB8360035D3DA /* FavoriteListDTO.swift */,
 			);
@@ -184,6 +189,15 @@
 				091AF03A256AB9A10035D3DA /* favorite_list_dto.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		091AF040256ABA190035D3DA /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				091AF049256ABA810035D3DA /* StockDTO+Mapping.swift */,
+				091AF04D256ABAC80035D3DA /* FavoriteListDTO+Mapping.swift */,
+			);
+			path = Mappers;
 			sourceTree = "<group>";
 		};
 		099611DC256AA0B800BF3A2D = {
@@ -394,8 +408,10 @@
 				099611ED256AA0B800BF3A2D /* ViewController.swift in Sources */,
 				091AF011256AB7E20035D3DA /* StockDTO.swift in Sources */,
 				0996128F256AB5EF00BF3A2D /* FavoriteStocksListUseCaseImpl.swift in Sources */,
+				091AF04A256ABA810035D3DA /* StockDTO+Mapping.swift in Sources */,
 				099611E9256AA0B800BF3A2D /* AppDelegate.swift in Sources */,
 				09961229256AA5F500BF3A2D /* Stock.swift in Sources */,
+				091AF04E256ABAC80035D3DA /* FavoriteListDTO+Mapping.swift in Sources */,
 				09961289256AB58200BF3A2D /* FavoriteStocksListUseCaseProtocol.swift in Sources */,
 				099611EB256AA0B800BF3A2D /* SceneDelegate.swift in Sources */,
 				0996125A256AAC6500BF3A2D /* FavoriteStockDetailUseCaseProtocol.swift in Sources */,
