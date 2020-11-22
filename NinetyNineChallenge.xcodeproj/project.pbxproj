@@ -55,6 +55,8 @@
 		0996126C256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996126B256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift */; };
 		09961289256AB58200BF3A2D /* FavoriteStocksListUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09961288256AB58200BF3A2D /* FavoriteStocksListUseCaseProtocol.swift */; };
 		0996128F256AB5EF00BF3A2D /* FavoriteStocksListUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996128E256AB5EF00BF3A2D /* FavoriteStocksListUseCaseImpl.swift */; };
+		09F32D8F256B0B5600F71592 /* FavoriteStockDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32D8E256B0B5600F71592 /* FavoriteStockDetailViewModel.swift */; };
+		09F32D97256B125000F71592 /* FavoriteStockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32D96256B125000F71592 /* FavoriteStockDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,8 @@
 		0996126B256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStockDetailUseCaseImpl.swift; sourceTree = "<group>"; };
 		09961288256AB58200BF3A2D /* FavoriteStocksListUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStocksListUseCaseProtocol.swift; sourceTree = "<group>"; };
 		0996128E256AB5EF00BF3A2D /* FavoriteStocksListUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStocksListUseCaseImpl.swift; sourceTree = "<group>"; };
+		09F32D8E256B0B5600F71592 /* FavoriteStockDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStockDetailViewModel.swift; sourceTree = "<group>"; };
+		09F32D96256B125000F71592 /* FavoriteStockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStockDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,6 +371,7 @@
 		095340A4256AF6F200EBBB03 /* FavoriteScene */ = {
 			isa = PBXGroup;
 			children = (
+				09F32D8B256B0A8B00F71592 /* FavoriteStockDetail */,
 				095340A5256AF70200EBBB03 /* FavoriteList */,
 			);
 			path = FavoriteScene;
@@ -516,6 +521,31 @@
 			path = FavoriteStocksListUseCase;
 			sourceTree = "<group>";
 		};
+		09F32D8B256B0A8B00F71592 /* FavoriteStockDetail */ = {
+			isa = PBXGroup;
+			children = (
+				09F32D8C256B0A9500F71592 /* ViewModel */,
+				09F32D8D256B0A9D00F71592 /* View */,
+			);
+			path = FavoriteStockDetail;
+			sourceTree = "<group>";
+		};
+		09F32D8C256B0A9500F71592 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				09F32D8E256B0B5600F71592 /* FavoriteStockDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		09F32D8D256B0A9D00F71592 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09F32D96256B125000F71592 /* FavoriteStockDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -633,6 +663,7 @@
 				095340A9256AF81C00EBBB03 /* FavoriteListViewModel.swift in Sources */,
 				09961262256AACDA00BF3A2D /* NNError.swift in Sources */,
 				0996126C256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift in Sources */,
+				09F32D8F256B0B5600F71592 /* FavoriteStockDetailViewModel.swift in Sources */,
 				09961267256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift in Sources */,
 				091AF017256AB8360035D3DA /* FavoriteListDTO.swift in Sources */,
 				095340B9256AFB5F00EBBB03 /* FavoriteListViewController.swift in Sources */,
@@ -651,6 +682,7 @@
 				091AF084256ACE5F0035D3DA /* RequestBuilderImpl.swift in Sources */,
 				095340D5256AFE2300EBBB03 /* FavoriteItemTableViewCell.swift in Sources */,
 				091AF05F256ABE730035D3DA /* RequestEngineProtocol.swift in Sources */,
+				09F32D97256B125000F71592 /* FavoriteStockDetailViewController.swift in Sources */,
 				091AF078256AC8760035D3DA /* ChallengeAPICredentials.swift in Sources */,
 				09961289256AB58200BF3A2D /* FavoriteStocksListUseCaseProtocol.swift in Sources */,
 				091AF055256ABDF20035D3DA /* RequestEndpointProtocol.swift in Sources */,

@@ -33,12 +33,13 @@ final class FavoriteListViewController: UIViewController {
         super.viewDidLoad()
         bind(to: viewModel)
         layoutUI()
-        configureViewController()
         configureTableView()
     }
     
     // MARK: View model binding
     func bind(to viewModel: FavoriteListViewModelProtocol) {
+        title = viewModel.screenTitle
+        
         viewModel.items.asObservable().subscribe { [self] items in
             UIThread { self.items = items.element ?? [] }
         }.disposed(by: disposeBag)
@@ -60,10 +61,6 @@ private extension FavoriteListViewController {
         tableView.delegate = self
         tableView.rowHeight = 80
         tableView.tableFooterView = UIView()
-    }
-    
-    func configureViewController() {
-        title = viewModel.screenTitle
     }
 }
 
