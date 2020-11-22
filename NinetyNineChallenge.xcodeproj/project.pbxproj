@@ -117,9 +117,9 @@
 		09961226256AA5B700BF3A2D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				09961227256AA5D300BF3A2D /* Entities */,
 				09961265256AAD4900BF3A2D /* Repositories */,
 				09961257256AAC3F00BF3A2D /* UseCases */,
-				09961227256AA5D300BF3A2D /* Entities */,
 				09961261256AACDA00BF3A2D /* NNError.swift */,
 			);
 			path = Domain;
@@ -136,8 +136,8 @@
 		09961257256AAC3F00BF3A2D /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				09961287256AB56500BF3A2D /* FavoriteStocksListUseCase */,
 				09961258256AAC4600BF3A2D /* FavoriteStockDetailUseCase */,
+				09961287256AB56500BF3A2D /* FavoriteStocksListUseCase */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -145,8 +145,8 @@
 		09961258256AAC4600BF3A2D /* FavoriteStockDetailUseCase */ = {
 			isa = PBXGroup;
 			children = (
-				09961259256AAC6500BF3A2D /* FavoriteStockDetailUseCaseProtocol.swift */,
 				0996126B256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift */,
+				09961259256AAC6500BF3A2D /* FavoriteStockDetailUseCaseProtocol.swift */,
 			);
 			path = FavoriteStockDetailUseCase;
 			sourceTree = "<group>";
@@ -162,8 +162,8 @@
 		09961287256AB56500BF3A2D /* FavoriteStocksListUseCase */ = {
 			isa = PBXGroup;
 			children = (
-				09961288256AB58200BF3A2D /* FavoriteStocksListUseCaseProtocol.swift */,
 				0996128E256AB5EF00BF3A2D /* FavoriteStocksListUseCaseImpl.swift */,
+				09961288256AB58200BF3A2D /* FavoriteStocksListUseCaseProtocol.swift */,
 			);
 			path = FavoriteStocksListUseCase;
 			sourceTree = "<group>";
