@@ -65,6 +65,7 @@
 		09F32DBC256B2A7800F71592 /* ItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DBB256B2A7800F71592 /* ItemInfoView.swift */; };
 		09F32DC4256B2C8C00F71592 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DC3256B2C8B00F71592 /* UIView+Extensions.swift */; };
 		09F32DC9256B37A400F71592 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DC8256B37A400F71592 /* AppRouter.swift */; };
+		09F32DD6256B3AC600F71592 /* EnvironmentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DD5256B3AC600F71592 /* EnvironmentConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +139,8 @@
 		09F32DBB256B2A7800F71592 /* ItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoView.swift; sourceTree = "<group>"; };
 		09F32DC3256B2C8B00F71592 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		09F32DC8256B37A400F71592 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		09F32DD4256B3AB800F71592 /* DevelopmentConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DevelopmentConfig.xcconfig; sourceTree = "<group>"; };
+		09F32DD5256B3AC600F71592 /* EnvironmentConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -464,6 +467,7 @@
 			children = (
 				09F32DCE256B395A00F71592 /* Application */,
 				095340BC256AFC0300EBBB03 /* Common */,
+				09F32DD3256B3A9100F71592 /* Configuration */,
 				091AF00B256AB7A60035D3DA /* Data */,
 				09961226256AA5B700BF3A2D /* Domain */,
 				095340A3256AF6E900EBBB03 /* Presentation */,
@@ -618,6 +622,15 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		09F32DD3256B3A9100F71592 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				09F32DD4256B3AB800F71592 /* DevelopmentConfig.xcconfig */,
+				09F32DD5256B3AC600F71592 /* EnvironmentConfig.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -767,6 +780,7 @@
 				09961289256AB58200BF3A2D /* FavoriteStocksListUseCaseProtocol.swift in Sources */,
 				091AF055256ABDF20035D3DA /* RequestEndpointProtocol.swift in Sources */,
 				09534074256ADD2400EBBB03 /* FavoritesRepositoryImpl.swift in Sources */,
+				09F32DD6256B3AC600F71592 /* EnvironmentConfig.swift in Sources */,
 				099611EB256AA0B800BF3A2D /* SceneDelegate.swift in Sources */,
 				0996125A256AAC6500BF3A2D /* FavoriteStockDetailUseCaseProtocol.swift in Sources */,
 			);
@@ -812,6 +826,7 @@
 /* Begin XCBuildConfiguration section */
 		0996120D256AA0B900BF3A2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F32DD4256B3AB800F71592 /* DevelopmentConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -873,6 +888,7 @@
 		};
 		0996120E256AA0B900BF3A2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F32DD4256B3AB800F71592 /* DevelopmentConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

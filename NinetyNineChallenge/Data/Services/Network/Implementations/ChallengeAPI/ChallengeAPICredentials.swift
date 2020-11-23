@@ -16,5 +16,5 @@ protocol ChallengeAPICredentialsProtocol {
 }
 
 struct ChallengeAPICredentials: ChallengeAPICredentialsProtocol {
-    var urlBase: URL { URL(string: "https://challenge.ninetynine.com")! }
+    var urlBase: URL { URL(string: Environment.infoForKey(.urlBase))! }
 }
