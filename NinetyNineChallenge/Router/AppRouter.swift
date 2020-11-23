@@ -21,11 +21,13 @@ enum AppTarget {
 
 final class AppRouter: RouterProtocol {
     private(set) var window: UIWindow
-    private var controllerBase: UINavigationController
+    private lazy var controllerBase: UINavigationController = UINavigationController()
+    private var viewControllerFactory: ViewControllerFactoryProtocol
     
-    init(_ windowScene: UIWindowScene) {
+    init(_ windowScene: UIWindowScene,
+         viewControllerFactory: ViewControllerFactoryProtocol = ViewControllerFactoryImpl()) {
         self.window = UIWindow(windowScene: windowScene)
-        self.controllerBase = UINavigationController()
+        self.viewControllerFactory = viewControllerFactory
     }
     
     func start() {
@@ -38,10 +40,11 @@ final class AppRouter: RouterProtocol {
     func show(module destination: AppTarget) {
         switch destination {
         case .favoriteList:
-            let viewController = FavoriteListViewController(viewModel: FavoriteListViewModelImpl(router: self))
+            let viewController = viewControllerFactory.makeFavoriteListViewController(withRouter: self)
             controllerBase.pushViewController(viewController, animated: true)
+            
         case .favoriteDetail(let identifier):
-            let viewController = FavoriteStockDetailViewController(viewModel: FavoriteStockDetailViewModelImpl(identifier: identifier))
+            let viewController = viewControllerFactory.makeFavoriteStockViewController(withIdentifier: identifier)
             controllerBase.pushViewController(viewController, animated: true)
         }
     }
