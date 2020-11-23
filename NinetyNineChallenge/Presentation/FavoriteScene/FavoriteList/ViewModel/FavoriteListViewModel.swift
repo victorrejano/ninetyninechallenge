@@ -15,6 +15,7 @@ protocol FavoriteListViewModelProtocol: class {
     var error: BehaviorRelay<NNError?> { get }
     var useCase: FavoriteStocksListUseCaseProtocol { get }
     var screenTitle: String { get }
+    var router: RouterProtocol { get }
     
     func start()
     func didSelect(at indexPath: IndexPath)
@@ -27,10 +28,13 @@ final class FavoriteListViewModelImpl: FavoriteListViewModelProtocol {
     private(set) var error: BehaviorRelay<NNError?> = .init(value: nil)
     private(set) var useCase: FavoriteStocksListUseCaseProtocol
     var screenTitle: String { "Favorites" }
+    var router: RouterProtocol
     
     init(useCase: FavoriteStocksListUseCaseProtocol =
-            FavoriteStocksListUseCaseImpl(repository: FavoritesRepositoryImpl())) {
+            FavoriteStocksListUseCaseImpl(repository: FavoritesRepositoryImpl()),
+         router: RouterProtocol) {
         self.useCase = useCase
+        self.router = router
     }
     
     func start() {
@@ -45,6 +49,6 @@ final class FavoriteListViewModelImpl: FavoriteListViewModelProtocol {
     }
     
     func didSelect(at indexPath: IndexPath) {
-        #warning("Implement navigation logic")
+        router.show(module: .favoriteDetail(items.value[indexPath.row].title))
     }
 }

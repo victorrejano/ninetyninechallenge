@@ -64,6 +64,7 @@
 		09F32DB7256B29D300F71592 /* SubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DB6256B29D300F71592 /* SubtitleLabel.swift */; };
 		09F32DBC256B2A7800F71592 /* ItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DBB256B2A7800F71592 /* ItemInfoView.swift */; };
 		09F32DC4256B2C8C00F71592 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DC3256B2C8B00F71592 /* UIView+Extensions.swift */; };
+		09F32DC9256B37A400F71592 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DC8256B37A400F71592 /* AppRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		09F32DB6256B29D300F71592 /* SubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleLabel.swift; sourceTree = "<group>"; };
 		09F32DBB256B2A7800F71592 /* ItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoView.swift; sourceTree = "<group>"; };
 		09F32DC3256B2C8B00F71592 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		09F32DC8256B37A400F71592 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -460,12 +462,12 @@
 		099611E7256AA0B800BF3A2D /* NinetyNineChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				09F32DCE256B395A00F71592 /* Application */,
 				095340BC256AFC0300EBBB03 /* Common */,
 				091AF00B256AB7A60035D3DA /* Data */,
 				09961226256AA5B700BF3A2D /* Domain */,
 				095340A3256AF6E900EBBB03 /* Presentation */,
-				099611E8256AA0B800BF3A2D /* AppDelegate.swift */,
-				099611EA256AA0B800BF3A2D /* SceneDelegate.swift */,
+				09F32DC7256B379400F71592 /* Router */,
 				099611F1256AA0B900BF3A2D /* Assets.xcassets */,
 				099611F3256AA0B900BF3A2D /* LaunchScreen.storyboard */,
 				099611F6256AA0B900BF3A2D /* Info.plist */,
@@ -597,6 +599,23 @@
 				09F32DBB256B2A7800F71592 /* ItemInfoView.swift */,
 			);
 			path = ItemInfoView;
+			sourceTree = "<group>";
+		};
+		09F32DC7256B379400F71592 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				09F32DC8256B37A400F71592 /* AppRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		09F32DCE256B395A00F71592 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				099611E8256AA0B800BF3A2D /* AppDelegate.swift */,
+				099611EA256AA0B800BF3A2D /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -734,6 +753,7 @@
 				091AF065256ABFFC0035D3DA /* URLSessionRequestEngineImpl.swift in Sources */,
 				09F32DB3256B29AB00F71592 /* TitleLabel.swift in Sources */,
 				099611E9256AA0B800BF3A2D /* AppDelegate.swift in Sources */,
+				09F32DC9256B37A400F71592 /* AppRouter.swift in Sources */,
 				091AF05B256ABE0D0035D3DA /* RequestBuilderProtocol.swift in Sources */,
 				091AF06A256AC6950035D3DA /* ChallengeAPIEndpoints.swift in Sources */,
 				09F32DA5256B271900F71592 /* AppColor.swift in Sources */,
