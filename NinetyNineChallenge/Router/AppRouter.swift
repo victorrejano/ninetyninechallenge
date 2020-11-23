@@ -44,7 +44,7 @@ final class AppRouter: RouterProtocol {
             controllerBase.pushViewController(viewController, animated: true)
             
         case .favoriteDetail(let identifier):
-            let viewController = viewControllerFactory.makeFavoriteStockViewController(withIdentifier: identifier)
+            let viewController = viewControllerFactory.makeFavoriteStockDetailViewController(withIdentifier: identifier)
             controllerBase.pushViewController(viewController, animated: true)
         }
     }

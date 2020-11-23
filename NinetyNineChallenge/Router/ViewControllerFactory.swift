@@ -10,7 +10,7 @@ import UIKit
 // MARK: View controller factory protocol
 protocol ViewControllerFactoryProtocol {
     func makeFavoriteListViewController(withRouter router: RouterProtocol) -> UIViewController
-    func makeFavoriteStockViewController(withIdentifier identifier: String) -> UIViewController
+    func makeFavoriteStockDetailViewController(withIdentifier identifier: String) -> UIViewController
 }
 
 // MARK: View controller factory implementation
@@ -19,7 +19,7 @@ struct ViewControllerFactoryImpl: ViewControllerFactoryProtocol {
         return FavoriteListViewController(viewModel: FavoriteListViewModelImpl(router: router))
     }
     
-    func makeFavoriteStockViewController(withIdentifier identifier: String) -> UIViewController {
+    func makeFavoriteStockDetailViewController(withIdentifier identifier: String) -> UIViewController {
         return FavoriteStockDetailViewController(viewModel: FavoriteStockDetailViewModelImpl(identifier: identifier))
     }
 }
