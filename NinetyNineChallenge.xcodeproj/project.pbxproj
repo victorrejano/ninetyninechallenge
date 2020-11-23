@@ -66,6 +66,8 @@
 		09F32DC4256B2C8C00F71592 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DC3256B2C8B00F71592 /* UIView+Extensions.swift */; };
 		09F32DC9256B37A400F71592 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DC8256B37A400F71592 /* AppRouter.swift */; };
 		09F32DD6256B3AC600F71592 /* EnvironmentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DD5256B3AC600F71592 /* EnvironmentConfig.swift */; };
+		09F32DE2256B3E4F00F71592 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DE1256B3E4F00F71592 /* LoadingView.swift */; };
+		09F32DE6256B3EBD00F71592 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DE5256B3EBD00F71592 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +143,8 @@
 		09F32DC8256B37A400F71592 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		09F32DD4256B3AB800F71592 /* DevelopmentConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DevelopmentConfig.xcconfig; sourceTree = "<group>"; };
 		09F32DD5256B3AC600F71592 /* EnvironmentConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfig.swift; sourceTree = "<group>"; };
+		09F32DE1256B3E4F00F71592 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		09F32DE5256B3EBD00F71592 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,9 +386,9 @@
 		095340A3256AF6E900EBBB03 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				09F32D9D256B26C600F71592 /* Theme */,
 				09F32D9A256B268900F71592 /* CustomViews */,
 				095340A4256AF6F200EBBB03 /* FavoriteScene */,
+				09F32D9D256B26C600F71592 /* Theme */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -440,6 +444,7 @@
 				095340C4256AFC5700EBBB03 /* Thread+Extensions.swift */,
 				095340D0256AFCA400EBBB03 /* Reactive+Extensions.swift */,
 				09F32DC3256B2C8B00F71592 /* UIView+Extensions.swift */,
+				09F32DE5256B3EBD00F71592 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -572,6 +577,7 @@
 		09F32D9A256B268900F71592 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				09F32DE0256B3E3F00F71592 /* LoadingView */,
 				09F32DBA256B2A5B00F71592 /* ItemInfoView */,
 				09F32D9C256B26A900F71592 /* Labels */,
 			);
@@ -629,6 +635,14 @@
 				09F32DD5256B3AC600F71592 /* EnvironmentConfig.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		09F32DE0256B3E3F00F71592 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				09F32DE1256B3E4F00F71592 /* LoadingView.swift */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -753,6 +767,7 @@
 				09F32D8F256B0B5600F71592 /* FavoriteStockDetailViewModel.swift in Sources */,
 				09961267256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift in Sources */,
 				09F32DBC256B2A7800F71592 /* ItemInfoView.swift in Sources */,
+				09F32DE6256B3EBD00F71592 /* UIViewController+Extensions.swift in Sources */,
 				091AF017256AB8360035D3DA /* FavoriteListDTO.swift in Sources */,
 				09F32DB7256B29D300F71592 /* SubtitleLabel.swift in Sources */,
 				09F32DC4256B2C8C00F71592 /* UIView+Extensions.swift in Sources */,
@@ -769,6 +784,7 @@
 				09F32DC9256B37A400F71592 /* AppRouter.swift in Sources */,
 				091AF05B256ABE0D0035D3DA /* RequestBuilderProtocol.swift in Sources */,
 				091AF06A256AC6950035D3DA /* ChallengeAPIEndpoints.swift in Sources */,
+				09F32DE2256B3E4F00F71592 /* LoadingView.swift in Sources */,
 				09F32DA5256B271900F71592 /* AppColor.swift in Sources */,
 				09961229256AA5F500BF3A2D /* Stock.swift in Sources */,
 				091AF04E256ABAC80035D3DA /* FavoriteListDTO+Mapping.swift in Sources */,

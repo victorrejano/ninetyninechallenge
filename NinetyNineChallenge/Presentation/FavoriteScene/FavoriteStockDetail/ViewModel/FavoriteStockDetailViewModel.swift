@@ -43,7 +43,9 @@ final class FavoriteStockDetailViewModelImpl: FavoriteStockDetailViewModelProtoc
     }
     
     func start() {
+        isLoading.toggle()
         useCase.fetch(withIdentifier: identifier) { [self] result in
+            isLoading.toggle()
             switch result {
             case .success(let data):
                 setData(data)

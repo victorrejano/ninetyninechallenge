@@ -38,7 +38,9 @@ final class FavoriteListViewModelImpl: FavoriteListViewModelProtocol {
     }
     
     func start() {
+        isLoading.toggle()
         useCase.fetch { [self] result in
+            isLoading.toggle()
             switch result {
             case .success(let data):
                 self.items.accept(data.map { FavoriteItemViewModelImpl(with: $0) })

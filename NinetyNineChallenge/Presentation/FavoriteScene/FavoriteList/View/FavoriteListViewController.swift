@@ -44,6 +44,15 @@ final class FavoriteListViewController: UIViewController {
             UIThread { self.items = items.element ?? [] }
         }.disposed(by: disposeBag)
         
+        viewModel.error.asObservable().subscribe { [self] error in
+            guard let error = error.element, error != nil else { return }
+            UIThread { showAlertError(with: error!) }
+        }.disposed(by: disposeBag)
+        
+        viewModel.isLoading.asObservable().subscribe { [self] isLoading in
+            UIThread { isLoading == true ? showLoadingView() : dismissLoadingView() }
+        }.disposed(by: disposeBag)
+        
         viewModel.start()
     }
 }
