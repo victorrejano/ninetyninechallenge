@@ -57,6 +57,13 @@
 		0996128F256AB5EF00BF3A2D /* FavoriteStocksListUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996128E256AB5EF00BF3A2D /* FavoriteStocksListUseCaseImpl.swift */; };
 		09F32D8F256B0B5600F71592 /* FavoriteStockDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32D8E256B0B5600F71592 /* FavoriteStockDetailViewModel.swift */; };
 		09F32D97256B125000F71592 /* FavoriteStockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32D96256B125000F71592 /* FavoriteStockDetailViewController.swift */; };
+		09F32D9F256B270000F71592 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32D9E256B270000F71592 /* AppFont.swift */; };
+		09F32DA5256B271900F71592 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DA4256B271900F71592 /* AppColor.swift */; };
+		09F32DAF256B275700F71592 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DAE256B275700F71592 /* AppAppearance.swift */; };
+		09F32DB3256B29AB00F71592 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DB2256B29AB00F71592 /* TitleLabel.swift */; };
+		09F32DB7256B29D300F71592 /* SubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DB6256B29D300F71592 /* SubtitleLabel.swift */; };
+		09F32DBC256B2A7800F71592 /* ItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DBB256B2A7800F71592 /* ItemInfoView.swift */; };
+		09F32DC4256B2C8C00F71592 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F32DC3256B2C8B00F71592 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +129,13 @@
 		0996128E256AB5EF00BF3A2D /* FavoriteStocksListUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStocksListUseCaseImpl.swift; sourceTree = "<group>"; };
 		09F32D8E256B0B5600F71592 /* FavoriteStockDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStockDetailViewModel.swift; sourceTree = "<group>"; };
 		09F32D96256B125000F71592 /* FavoriteStockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStockDetailViewController.swift; sourceTree = "<group>"; };
+		09F32D9E256B270000F71592 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		09F32DA4256B271900F71592 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		09F32DAE256B275700F71592 /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
+		09F32DB2256B29AB00F71592 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		09F32DB6256B29D300F71592 /* SubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleLabel.swift; sourceTree = "<group>"; };
+		09F32DBB256B2A7800F71592 /* ItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoView.swift; sourceTree = "<group>"; };
+		09F32DC3256B2C8B00F71592 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -363,6 +377,8 @@
 		095340A3256AF6E900EBBB03 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				09F32D9D256B26C600F71592 /* Theme */,
+				09F32D9A256B268900F71592 /* CustomViews */,
 				095340A4256AF6F200EBBB03 /* FavoriteScene */,
 			);
 			path = Presentation;
@@ -418,6 +434,7 @@
 				095340BE256AFC2600EBBB03 /* UITableView+RelatedExtensions.swift */,
 				095340C4256AFC5700EBBB03 /* Thread+Extensions.swift */,
 				095340D0256AFCA400EBBB03 /* Reactive+Extensions.swift */,
+				09F32DC3256B2C8B00F71592 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -546,6 +563,42 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		09F32D9A256B268900F71592 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				09F32DBA256B2A5B00F71592 /* ItemInfoView */,
+				09F32D9C256B26A900F71592 /* Labels */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		09F32D9C256B26A900F71592 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				09F32DB2256B29AB00F71592 /* TitleLabel.swift */,
+				09F32DB6256B29D300F71592 /* SubtitleLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		09F32D9D256B26C600F71592 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				09F32D9E256B270000F71592 /* AppFont.swift */,
+				09F32DA4256B271900F71592 /* AppColor.swift */,
+				09F32DAE256B275700F71592 /* AppAppearance.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		09F32DBA256B2A5B00F71592 /* ItemInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				09F32DBB256B2A7800F71592 /* ItemInfoView.swift */,
+			);
+			path = ItemInfoView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -658,14 +711,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F32D9F256B270000F71592 /* AppFont.swift in Sources */,
 				095340AF256AF8C200EBBB03 /* FavoriteItemViewModel.swift in Sources */,
 				091AF07C256ACB3E0035D3DA /* ChallengeAPIService.swift in Sources */,
 				095340A9256AF81C00EBBB03 /* FavoriteListViewModel.swift in Sources */,
 				09961262256AACDA00BF3A2D /* NNError.swift in Sources */,
+				09F32DAF256B275700F71592 /* AppAppearance.swift in Sources */,
 				0996126C256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift in Sources */,
 				09F32D8F256B0B5600F71592 /* FavoriteStockDetailViewModel.swift in Sources */,
 				09961267256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift in Sources */,
+				09F32DBC256B2A7800F71592 /* ItemInfoView.swift in Sources */,
 				091AF017256AB8360035D3DA /* FavoriteListDTO.swift in Sources */,
+				09F32DB7256B29D300F71592 /* SubtitleLabel.swift in Sources */,
+				09F32DC4256B2C8C00F71592 /* UIView+Extensions.swift in Sources */,
 				095340B9256AFB5F00EBBB03 /* FavoriteListViewController.swift in Sources */,
 				095340BF256AFC2600EBBB03 /* UITableView+RelatedExtensions.swift in Sources */,
 				091AF011256AB7E20035D3DA /* StockDTO.swift in Sources */,
@@ -674,9 +732,11 @@
 				095340D1256AFCA400EBBB03 /* Reactive+Extensions.swift in Sources */,
 				095340C5256AFC5700EBBB03 /* Thread+Extensions.swift in Sources */,
 				091AF065256ABFFC0035D3DA /* URLSessionRequestEngineImpl.swift in Sources */,
+				09F32DB3256B29AB00F71592 /* TitleLabel.swift in Sources */,
 				099611E9256AA0B800BF3A2D /* AppDelegate.swift in Sources */,
 				091AF05B256ABE0D0035D3DA /* RequestBuilderProtocol.swift in Sources */,
 				091AF06A256AC6950035D3DA /* ChallengeAPIEndpoints.swift in Sources */,
+				09F32DA5256B271900F71592 /* AppColor.swift in Sources */,
 				09961229256AA5F500BF3A2D /* Stock.swift in Sources */,
 				091AF04E256ABAC80035D3DA /* FavoriteListDTO+Mapping.swift in Sources */,
 				091AF084256ACE5F0035D3DA /* RequestBuilderImpl.swift in Sources */,

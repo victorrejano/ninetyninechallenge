@@ -17,6 +17,11 @@ final class FavoriteStockDetailViewController: UIViewController {
     private let disposeBag = DisposeBag()
     
     // MARK: Views
+    private lazy var containerView = UIStackView()
+    private lazy var titleLabel = TitleLabel(text: "")
+    private lazy var categoryItemInfo = ItemInfoView(title: "CATEGORY")
+    private lazy var codeItemInfo = ItemInfoView(title: "RIC CODE")
+    private lazy var hotItemInfo = ItemInfoView(title: "HOT")
     
     // MARK: Init
     convenience init(viewModel: FavoriteStockDetailViewModelProtocol) {
@@ -28,6 +33,7 @@ final class FavoriteStockDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bind(to: viewModel)
+        layoutUI()
     }
     
     // MARK: View model binding
@@ -35,19 +41,19 @@ final class FavoriteStockDetailViewController: UIViewController {
         title = viewModel.screenTitle
         
         viewModel.stockName.asObservable().subscribe { [self] stockName in
-            UIThread {  }
+            UIThread { titleLabel.text = stockName.element ?? "" }
         }.disposed(by: disposeBag)
         
         viewModel.stockCategory.asObservable().subscribe { [self] stockCategory in
-            UIThread {  }
+            UIThread { categoryItemInfo.setValue(value: stockCategory.element ?? "") }
         }.disposed(by: disposeBag)
         
         viewModel.stockCode.asObservable().subscribe { [self] stockCode in
-            UIThread {  }
+            UIThread { codeItemInfo.setValue(value: stockCode.element ?? "") }
         }.disposed(by: disposeBag)
         
         viewModel.stockHot.asObservable().subscribe { [self] stockHot in
-            UIThread { }
+            UIThread { hotItemInfo.setValue(value: stockHot.element ?? "")}
         }.disposed(by: disposeBag)
         
         viewModel.start()
@@ -57,5 +63,30 @@ final class FavoriteStockDetailViewController: UIViewController {
 // MARK: UI Setup
 private extension FavoriteStockDetailViewController {
     func layoutUI() {
+        let itemInfoContainerView = UIStackView()
+        itemInfoContainerView.axis = .horizontal
+        itemInfoContainerView.distribution = .equalCentering
+        itemInfoContainerView.addArrangedSubviews([categoryItemInfo, codeItemInfo, hotItemInfo])
+        
+        [containerView, itemInfoContainerView].forEach {
+            view.addSubview($0)
+            $0.translatesAutoresizingMaskIntoConstraints = false
+        }
+        
+        containerView.axis = .vertical
+        containerView.distribution = .fillProportionally
+        containerView.spacing = 10
+        containerView.addArrangedSubviews([titleLabel, itemInfoContainerView])
+        
+        let padding: CGFloat = 20
+        
+        NSLayoutConstraint.activate([
+            containerView.heightAnchor.constraint(lessThanOrEqualToConstant: 100),
+            containerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: padding),
+            containerView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: padding),
+            containerView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -padding)
+        ])
+        
+        view.backgroundColor = AppColor.background.value
     }
 }
