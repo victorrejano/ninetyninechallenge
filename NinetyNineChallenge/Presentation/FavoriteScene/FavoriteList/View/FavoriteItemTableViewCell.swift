@@ -8,7 +8,7 @@
 import UIKit
 
 class FavoriteItemTableViewCell: UITableViewCell {
-    private lazy var titleLabel = UILabel()
+    private lazy var titleLabel = TitleLabel(text: "")
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -21,7 +21,6 @@ class FavoriteItemTableViewCell: UITableViewCell {
     
     private func layoutUI() {
         addSubview(titleLabel)
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: topAnchor),
