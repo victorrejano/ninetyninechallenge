@@ -19,6 +19,7 @@ protocol FavoriteListViewModelProtocol: class {
     
     func start()
     func didSelect(at indexPath: IndexPath)
+    func didRemove(at indexPath: IndexPath)
 }
 
 // MARK: View model implementation
@@ -52,5 +53,11 @@ final class FavoriteListViewModelImpl: FavoriteListViewModelProtocol {
     
     func didSelect(at indexPath: IndexPath) {
         router.show(module: .favoriteDetail(items.value[indexPath.row].title))
+    }
+    
+    func didRemove(at indexPath: IndexPath) {
+        var currentValues = items.value
+        currentValues.remove(at: indexPath.row)
+        items.accept(currentValues)
     }
 }

@@ -19,9 +19,6 @@ final class FavoriteListViewController: UIViewController {
     // MARK: Views
     private lazy var tableView = UITableView()
     
-    // MARK: Data source
-    private var items: [FavoriteItemViewModelProtocol] = [] { didSet { self.tableView.reloadData() }}
-    
     // MARK: Init
     convenience init(viewModel: FavoriteListViewModelProtocol) {
         self.init()
@@ -41,7 +38,7 @@ final class FavoriteListViewController: UIViewController {
         title = viewModel.screenTitle
         
         viewModel.items.asObservable().subscribe { [self] items in
-            UIThread { self.items = items.element ?? [] }
+            UIThread { self.tableView.reloadData() }
         }.disposed(by: disposeBag)
         
         viewModel.error.asObservable().subscribe { [self] error in
@@ -76,14 +73,24 @@ private extension FavoriteListViewController {
 // MARK: TableView data source
 extension FavoriteListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return viewModel.items.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(for: FavoriteItemTableViewCell.self) else { return UITableViewCell()
-        }
+        guard let cell = tableView.dequeueReusableCell(for: FavoriteItemTableViewCell.self) else { return UITableViewCell() }
+        return prepareCell(cell, at: indexPath)
+    }
+    
+    private func prepareCell(_ cell: FavoriteItemTableViewCell, at indexPath: IndexPath) -> FavoriteItemTableViewCell {
         let itemViewModel = viewModel.items.value[indexPath.row]
-        cell.bind(to: itemViewModel)
+        
+        // Bind cell to viewModel and setup event for remove item
+        cell.bind(to: itemViewModel) { [self] cell in
+            guard let indexPath = tableView.indexPath(for: cell) else { return }
+            viewModel.didRemove(at: indexPath)
+            tableView.deleteRows(at: [indexPath], with: .left)
+        }
+        
         return cell
     }
 }
