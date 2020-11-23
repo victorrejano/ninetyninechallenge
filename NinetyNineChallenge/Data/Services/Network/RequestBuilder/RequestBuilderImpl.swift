@@ -10,6 +10,7 @@ import Foundation
 class RequestBuilderImpl: RequestBuilderProtocol {
     private(set) var urlBase: URL
     private var method: HttpMethod = .GET
+    private var cachePolicy: URLRequest.CachePolicy = .returnCacheDataElseLoad
     private var url: URL?
     
     init(urlBase: URL) {
@@ -28,6 +29,12 @@ class RequestBuilderImpl: RequestBuilderProtocol {
         return self
     }
     
+    @discardableResult
+    func setCachePolicy(_ policy: URLRequest.CachePolicy) -> Self {
+        cachePolicy = policy
+        return self
+    }
+    
     func build() throws -> URLRequest {
         guard let unwrappedURL = url else { throw NNError.data(.unableToObtain) }
         
@@ -36,6 +43,7 @@ class RequestBuilderImpl: RequestBuilderProtocol {
         
         var urlRequest = URLRequest(url: composedURL)
         urlRequest.httpMethod = method.rawValue.capitalized
+        urlRequest.cachePolicy = cachePolicy
         
         return urlRequest
     }

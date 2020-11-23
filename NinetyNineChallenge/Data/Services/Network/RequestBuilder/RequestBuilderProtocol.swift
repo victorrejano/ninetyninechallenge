@@ -16,6 +16,8 @@ protocol RequestBuilderProtocol: class {
     func setEndpoint<T: RequestEndpointProtocol>(_ endpoint: T) -> Self
     @discardableResult
     func setMethod(_ method: HttpMethod) -> Self
+    @discardableResult
+    func setCachePolicy(_ policy: URLRequest.CachePolicy) -> Self
     func build() throws -> URLRequest
 }
 
