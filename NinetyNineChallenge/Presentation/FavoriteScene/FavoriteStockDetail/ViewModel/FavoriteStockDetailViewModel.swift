@@ -9,7 +9,7 @@ import Foundation
 import RxCocoa
 
 // MARK: View model protocol
-protocol FavoriteStockDetailViewModelProtocol: class {
+protocol FavoriteStockDetailViewModelProtocol: AnyObject {
     var isLoading: BehaviorRelay<Bool> { get }
     var error: BehaviorRelay<NNError?> { get }
     var useCase: FavoriteStockDetailUseCaseProtocol { get }

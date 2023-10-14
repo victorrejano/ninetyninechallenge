@@ -9,7 +9,7 @@ import Foundation
 import RxCocoa
 
 // MARK: View model protocol
-protocol FavoriteListViewModelProtocol: class {
+protocol FavoriteListViewModelProtocol {
     var items: BehaviorRelay<[FavoriteItemViewModelProtocol]> { get }
     var isLoading: BehaviorRelay<Bool> { get }
     var error: BehaviorRelay<NNError?> { get }

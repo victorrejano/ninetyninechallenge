@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol FavoritesRepositoryProtocol: class {
+protocol FavoritesRepositoryProtocol {
     func fetchFavoriteStock(withIdentifier identifier: String,
                             _ completion: @escaping (Result<Stock, NNError>) -> Void)
     func fetchFavoriteStocks(_ completion: @escaping (Result<FavoriteStocks, NNError>) -> Void)

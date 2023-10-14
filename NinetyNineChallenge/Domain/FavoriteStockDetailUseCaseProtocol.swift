@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol FavoriteStockDetailUseCaseProtocol: class {
+protocol FavoriteStockDetailUseCaseProtocol {
     func fetch(withIdentifier identifier: String,
                _ completion: @escaping (Result<Stock, NNError>) -> Void)
 }

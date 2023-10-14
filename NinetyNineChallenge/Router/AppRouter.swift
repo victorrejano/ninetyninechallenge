@@ -8,7 +8,7 @@
 import UIKit
 
 // MARK: Router protocol
-protocol RouterProtocol: class {
+protocol RouterProtocol: AnyObject {
     func start()
     func show(module destination: AppTarget)
 }

@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol FavoriteStocksListUseCaseProtocol: class {
+protocol FavoriteStocksListUseCaseProtocol: AnyObject {
     func fetch(_ completion: @escaping (Result<FavoriteStocks, NNError>) -> Void)
 }

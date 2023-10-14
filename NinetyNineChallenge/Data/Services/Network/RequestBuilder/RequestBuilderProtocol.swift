@@ -10,7 +10,7 @@
 
 import Foundation
 
-protocol RequestBuilderProtocol: class {
+protocol RequestBuilderProtocol: AnyObject {
     var urlBase: URL { get }
     @discardableResult
     func setEndpoint<T: RequestEndpointProtocol>(_ endpoint: T) -> Self

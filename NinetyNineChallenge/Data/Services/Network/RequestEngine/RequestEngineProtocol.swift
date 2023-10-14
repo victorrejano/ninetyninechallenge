@@ -10,7 +10,7 @@
 
 import Foundation
 
-protocol RequestEngineProtocol: class {
+protocol RequestEngineProtocol: AnyObject {
     func execute<T: Decodable>(_ request: URLRequest,
                                for type: T.Type,
                                _ completion: @escaping (Result<T, NNError>) -> Void)

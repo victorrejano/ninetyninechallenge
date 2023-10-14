@@ -8,7 +8,7 @@
 import UIKit
 
 // MARK: Identifiable protocol for tableViewCells
-protocol CellIdentifiable: class {
+protocol CellIdentifiable: AnyObject {
     static var reuseIdentifier: String { get }
 }
 
