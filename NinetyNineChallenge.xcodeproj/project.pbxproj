@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -44,6 +44,8 @@
 		095340C5256AFC5700EBBB03 /* Thread+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095340C4256AFC5700EBBB03 /* Thread+Extensions.swift */; };
 		095340D1256AFCA400EBBB03 /* Reactive+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095340D0256AFCA400EBBB03 /* Reactive+Extensions.swift */; };
 		095340D5256AFE2300EBBB03 /* FavoriteItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095340D4256AFE2300EBBB03 /* FavoriteItemTableViewCell.swift */; };
+		09707C092ADA7F7F00F7FA37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09707C082ADA7F7F00F7FA37 /* ViewController.swift */; };
+		09707C0B2ADA7F8800F7FA37 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09707C0A2ADA7F8800F7FA37 /* ViewModel.swift */; };
 		099611E9256AA0B800BF3A2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099611E8256AA0B800BF3A2D /* AppDelegate.swift */; };
 		099611EB256AA0B800BF3A2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099611EA256AA0B800BF3A2D /* SceneDelegate.swift */; };
 		099611F2256AA0B900BF3A2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099611F1256AA0B900BF3A2D /* Assets.xcassets */; };
@@ -117,6 +119,8 @@
 		095340C4256AFC5700EBBB03 /* Thread+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thread+Extensions.swift"; sourceTree = "<group>"; };
 		095340D0256AFCA400EBBB03 /* Reactive+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+Extensions.swift"; sourceTree = "<group>"; };
 		095340D4256AFE2300EBBB03 /* FavoriteItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItemTableViewCell.swift; sourceTree = "<group>"; };
+		09707C082ADA7F7F00F7FA37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09707C0A2ADA7F8800F7FA37 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		099611E5256AA0B800BF3A2D /* NinetyNineChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinetyNineChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		099611E8256AA0B800BF3A2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		099611EA256AA0B800BF3A2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -388,6 +392,7 @@
 		095340A3256AF6E900EBBB03 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				09707C052ADA7F3D00F7FA37 /* Common */,
 				09F32D9A256B268900F71592 /* CustomViews */,
 				095340A4256AF6F200EBBB03 /* FavoriteScene */,
 				09F32D9D256B26C600F71592 /* Theme */,
@@ -449,6 +454,15 @@
 				09F32DE5256B3EBD00F71592 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		09707C052ADA7F3D00F7FA37 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				09707C082ADA7F7F00F7FA37 /* ViewController.swift */,
+				09707C0A2ADA7F8800F7FA37 /* ViewModel.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		099611DC256AA0B800BF3A2D = {
@@ -770,6 +784,7 @@
 				0996126C256AAE4F00BF3A2D /* FavoriteStockDetailUseCaseImpl.swift in Sources */,
 				09F32D8F256B0B5600F71592 /* FavoriteStockDetailViewModel.swift in Sources */,
 				09961267256AADB100BF3A2D /* FavoritesRepositoryProtocol.swift in Sources */,
+				09707C0B2ADA7F8800F7FA37 /* ViewModel.swift in Sources */,
 				09F32DBC256B2A7800F71592 /* ItemInfoView.swift in Sources */,
 				09F32DE6256B3EBD00F71592 /* UIViewController+Extensions.swift in Sources */,
 				091AF017256AB8360035D3DA /* FavoriteListDTO.swift in Sources */,
@@ -786,6 +801,7 @@
 				09F32DB3256B29AB00F71592 /* TitleLabel.swift in Sources */,
 				099611E9256AA0B800BF3A2D /* AppDelegate.swift in Sources */,
 				09F32DC9256B37A400F71592 /* AppRouter.swift in Sources */,
+				09707C092ADA7F7F00F7FA37 /* ViewController.swift in Sources */,
 				091AF05B256ABE0D0035D3DA /* RequestBuilderProtocol.swift in Sources */,
 				091AF06A256AC6950035D3DA /* ChallengeAPIEndpoints.swift in Sources */,
 				09F32DE2256B3E4F00F71592 /* LoadingView.swift in Sources */,
